@@ -663,6 +663,24 @@ footer h3{
  
 }
 
+@media (max-width: 585px){
+
+    .film-box img{
+        width: 220px;
+        height: 120px;
+    }
+
+    .film-txtbox h3{
+        font-size: 1rem;
+    }
+
+    .film-txtbox p{
+        font-size: .85rem;
+    }
+  
+ 
+}
+
 
 
 @keyframes glowtext {
