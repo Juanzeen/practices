@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #ccc;
+    background-color: #111;
+}
+
+a{
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px 20px;
+    margin-top: 1rem;
+}
+
+header ul a{
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+header ul li {
+    padding: 0.5rem 1rem;
+}
+
+header ul a:hover{
+    text-shadow: 2px 2px 5px #FFF;
+}
+
+header ul #center-nav{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+header h1{
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    animation: glowtext;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 3px #BBB;
+}
+
+header p{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lists{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lists article{
+    margin-bottom: 4rem;
+}
+
+#lists h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+#artists-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.artist-box {
+    border-radius: 8px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    width: 27%;
+    transition: 0.6s;
+}
+
+.artist-box img{
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+
+.artist-box h3,
+.artist-box p {
+    text-align: center;
+    padding: 0.4rem 0.5rem;
+}
+
+.artist-box h3 {
+    font-size: 1.6rem;
+}
+
+.artist-box p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.artist-box:hover{
+    margin-top: -50px;
+    box-shadow: 6px 10px 10px rgba(255,255,255,0.2)
+}
+
+.artist-box:nth-child(2):hover{
+    margin-top: -20px; 
+    box-shadow: 6px 10px 10px rgba(255,255,255,0.2)
+}
+
+
+#music-container{
+    width: 85%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.music-card{
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    border-radius: 150px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.music-card h3{
+    font-size: 1.5rem;
+}
+
+.music-card h4{
+    font-size: 1.1rem;
+    font-style: oblique;
+}
+
+.music-card:hover{
+    letter-spacing: 0.5px;
+    color: #FFF;
+}
+
+#filho{
+    background-image: url("./img/o\ menino\ que\ queria\ ser\ Deus.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#corra{
+    background-image: url("./img/corra.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#navega{
+    background-image: url("./img/daiacesaroqueedecesar.png");
+    background-position: center;
+    background-size: cover;
+}
+#free2023{
+    background-image: url("./img/fre2023.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#weeknd{
+    background-image: url("./img/diefu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#rastazima{
+    background-image: url("./img/rastazima.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#travis{
+    background-image: url("./img/astrow.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#film-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+}
+
+#film-container > div{
+    margin-bottom: 2rem;
+}
+
+.film-box{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 0.25rem 6rem 0.25rem 0.2rem;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.film-box:hover{
+    background-color: #222;
+}
+
+
+.film-box img{
+    border-right: 1px solid #EEE;
+    width: 400px;
+    height: 300px;
+    padding-right:1rem;
+}
+
+.film-box .film-txtbox{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    width: 50%;
+}
+
+.film-txtbox h3{
+    font-size: 1.5rem;
+}
+
+.film-txtbox p{
+    font-size: 1.2rem;
+}
+
+#animanga{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+#animanga .animanga-items{
+    width: 20%;
+    height: 300px;
+    border-radius: 50px;
+    background-color: #222;
+    position: relative;
+    cursor: pointer;
+}
+
+.animanga-items img{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+.animanga-items .animanga-txtbox{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #FFF;
+    width: 80%;
+    left: 10%;
+    top: 30%;
+    transition: 0.5s;
+}
+
+.animanga-txtbox h3{
+    font-size: 1.6rem;
+}
+
+.animanga-txtbox p{
+    font-size: 1.1rem;
+}
+
+.animanga-items:hover{
+    box-shadow: 3px 3px 30px rgba(50,50,50,0.6);
+}
+
+.animanga-items:hover > .animanga-txtbox{
+    top: 25%;
+}
+
+.animanga-items:hover > img{
+    opacity: 0.4;
+}
+
+#games-container {
+    display: flex;
+    width: 90%;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.games-box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.games-box h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+    padding: 0.75rem 0;
+}
+
+.games-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#gow {
+    background-color: #ca0303c7;
+}
+
+#gow:hover{
+    background-color: #111;
+    color: #ca0303c7;
+    letter-spacing: 1px;
+}
+
+#tlou{
+    background-color: #bf7000;
+}
+
+#tlou:hover{
+    background-color: #111;
+    color: #bf7000;
+    letter-spacing: 1px;
+}
+
+#cod{
+    background-color: #e49a35;
+}
+
+#cod:hover{
+    background-color: #111;
+    color: #e49a35;
+    letter-spacing: 1px;
+}
+
+#fortnite{
+    background-color: #5FCEEA;
+}
+
+#fortnite:hover{
+    background-color: #111;
+    color: #5FCEEA;
+    letter-spacing: 1px;
+}
+
+#rocketl{
+    background-color: #0060ff;
+}
+
+#rocketl:hover{
+    background-color: #111;
+    color: #0060ff;
+    letter-spacing: 1px;
+}
+
+footer {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer h3{
+    font-style: oblique;
+}
+
+@media (max-width: 1700px) {
+
+.film-box .film-txtbox{
+    right: 15%;
+}
+
+}
+
+#animanga .animanga-items{
+    width: 25%;
+}
+
+@media (max-width: 1455px) {
+
+.film-box img{
+    width: 350px;
+    height: 300px;
+}
+
+}
+
+@media (max-width: 1300px) {
+    .film-box .film-txtbox{
+        right: 10%;
+    }
+
+@media (max-width: 1200px) {
+
+
+    #lists h2{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .artist-box{
+        width: 30%;
+    }
+
+    .artist-box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .artist-box p {
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+    #music-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .music-card{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border-radius: 100px;
+        padding: 1rem;
+        justify-content: flex-end;
+    }
+
+    .music-card h3{
+        font-size: 1.1rem;
+    }
+    
+    .music-card h4{
+        font-size: 1rem;
+    }
+
+
+    .film-box{
+        width: 95%;
+    }
+
+    .film-box img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .film-box .film-txtbox{
+        width: 40%;
+        right: 15%;
+        top: 20%;
+    }
+
+    .film-txtbox h3{
+        font-size: 1.5rem;
+    }
+    
+    .film-txtbox p{
+        font-size: 1.2rem;
+    }
+
+    #animanga .animanga-items{
+       width: 45%;
+    }
+
+    .animanga-items .animanga-txtbox{
+        width: 80%;
+        top: 30%;
+        left: 10%;
+    }
+
+    .animanga-txtbox h3{
+        font-size: 1.4rem;
+    }
+
+    .animanga-txtbox p{
+        font-size: 1.1rem;
+    }
+
+    #games-container{
+        gap: 20px;
+    }
+
+    .games-box{
+        width: 40%;
+    }
+
+
+    header h1{
+        color: #FFF;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    header p{
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+#artists-list{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.artist-box{
+    width: 80%;
+    
+}
+
+}
+
+@media (max-width: 800px) {
+
+    .music-card{
+        width: 150px;
+        height: 150px;
+    }
+
+    .film-box img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .film-box .film-txtbox{
+        right: 5%;
+        top: 20%;
+        width: 50%;
+    }
+    
+    .film-txtbox h3{
+        font-size: 1.4rem;
+    }
+    
+    .film-txtbox p{
+        font-size: 1.1rem;
+    }
+
+    #animanga .animanga-items{
+        width: 320px;
+        height: 250px;
+     }
+
+     .animanga-items img{
+        opacity: 0.6;
+     }
+
+    .games-box{
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 750px){
+
+    .film-box img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .film-box .film-txtbox{
+        top: 8%;
+    }
+
+    .film-txtbox h3{
+        font-size: 1.2rem;
+    }
+
+    .film-txtbox p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    .film-box .film-txtbox{
+        top: 2%;
+        right: 2%;
+    }
+
+    .film-txtbox h3{
+        font-size: 1.1rem;
+    }
+
+    .film-txtbox p{
+        font-size: .95rem;
+    }
+ 
+}
+
+
+
+@keyframes glowtext {
+
+    20%{
+        text-shadow: 2px 2px 3px #BBB;
+    }
+
+    40%{
+        text-shadow: 2px 2px 6px #CCC;
+    }
+
+    60%{
+        text-shadow: 2px 2px 10px #EEE;
+    }
+
+    80%{
+        text-shadow: 2px 2px 6px #CCC;
+    }
+
+    100%{
+        text-shadow: 2px 2px 3px #BBB;
+    }
+}
+
+}
