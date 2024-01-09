@@ -591,6 +591,7 @@ footer h3{
         width: 150px;
         height: 150px;
     }
+    
 
     .film-box img{
         width: 300px;
@@ -667,7 +668,7 @@ footer h3{
 
     .film-box img{
         width: 180px;
-        height:130px;
+        height:150px;
     }
 
     .film-txtbox h3{
@@ -676,6 +677,20 @@ footer h3{
 
     .film-txtbox p{
         font-size: .85rem;
+    }
+  
+ 
+}
+
+@media (max-width: 400px){
+
+    .film-box img{
+        width: 160px;
+        height:150px;
+    }
+
+    .film-txtbox p{
+        font-size: .80rem;
     }
   
  
