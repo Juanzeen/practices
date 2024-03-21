@@ -99,48 +99,89 @@ main{
     margin-left: 25px;
 }
 
-.add-note-interface{
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    z-index: 3;
-    width: 50%;
-    height: 25%;
-    margin: auto;
-    background-color: #232323;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 6px;
-}
-
-.add-note-interface label{
-  font-size: 1.4rem;
-  opacity: .9;
-}
-
-.add-note-interface input{
-    width: 60%;
-    background-color: transparent;
-    border: 1px solid #FDFDFD;
-    border-radius: 4px;
-    padding: .5rem 1rem;
-    color: #FDFDFD;
-}
-
-.add-note-interface button{
-    margin-top: .7rem;
-    width: 20%;
-    padding: .4rem 1rem;
-    background-color: #343434;
-    color: #FDFDFD;
-    border-radius: 4px;
-    border: 1px solid #FBFBFB;
-    cursor: pointer;
-}
-
 .hide{
     display: none;
+}
+
+@media(max-width:750px){
+
+    header h1{
+        font-size: 1.8rem;
+    }
+    
+    header p{
+        font-size: 1.2rem;
+    }
+
+    .classU{
+        width: 60%;
+    }
+
+    .classU h3{
+        font-size: 1.4rem;
+    }
+    
+    .classU h4{
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+    
+    .classU p{
+        font-size: 1.05rem;
+        opacity: .8;
+    }
+    
+    .classU .dates-title{
+        font-size: 1rem;
+        opacity: .9;
+    }
+
+    .classU ol{
+        font-size: .9rem;
+        opacity: .7;
+        margin-left: 25px;
+    }
+    
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size: 1.7rem;
+    }
+    
+    header p{
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .classU h3{
+        font-size: 1.3rem;
+    }
+    
+    .classU h4{
+        font-size: 1.1rem;
+        margin-bottom: .2rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+    
+    .classU p{
+        font-size: 1rem;
+        opacity: .8;
+    }
+    
+    .classU .dates-title{
+        font-size: .95rem;
+        opacity: .9;
+    }
+
+    .classU ol{
+        font-size: .8rem;
+        opacity: .7;
+        margin-left: 25px;
+    }
+
 }
