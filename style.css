@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    color: #FDFDFD;
+    position: relative;
+    z-index: 1;
+    font-family: Poppins, 'sans-serif';
+}
+
+body::-webkit-scrollbar {
+    width: 2px;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FBFBFB;
+  }
+
+  body::-webkit-scrollbar-track-piece{
+    background-color: #333;
+  }
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto;
+    gap: 10px;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+header p{
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+main{
+    
+    margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.classU{
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #FEFEFE;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.classU:hover{
+    background-color: #222;
+}
+
+.classU h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.classU h4{
+    font-size: 1.25rem;
+    margin-bottom: .2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.classU p{
+    font-size: 1.1rem;
+    opacity: .8;
+}
+
+.classU .dates-title{
+    font-size: 1.05rem;
+    opacity: .9;
+}
+
+.classU ol{
+    font-size: .9rem;
+    opacity: .7;
+    margin-left: 25px;
+}
+
+.add-note-interface{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 3;
+    width: 50%;
+    height: 25%;
+    margin: auto;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 6px;
+}
+
+.add-note-interface label{
+  font-size: 1.4rem;
+  opacity: .9;
+}
+
+.add-note-interface input{
+    width: 60%;
+    background-color: transparent;
+    border: 1px solid #FDFDFD;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    color: #FDFDFD;
+}
+
+.add-note-interface button{
+    margin-top: .7rem;
+    width: 20%;
+    padding: .4rem 1rem;
+    background-color: #343434;
+    color: #FDFDFD;
+    border-radius: 4px;
+    border: 1px solid #FBFBFB;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
