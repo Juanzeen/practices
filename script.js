@@ -7,10 +7,10 @@ class universityClass {
     }
 }
 
-const metodos = new universityClass("Métodos Matemáticos", "106 - CCT", "Segunda / Quarta / 14-16", ["17/04", "22/05", "26/06"])
-const ipe = new universityClass("Estatística e Probabilidade", "109A - CCT", "Segunda / Quarta / 8-10")
-const ed1 = new universityClass("Estrutura de Dados I", "109B - CCT", "Segunda 10-12 / Terça 14-16")
-const plp = new universityClass("Paradigmas de Linguagens de Programação", "206 - CCT", "Terça 10-12 / Quinta 14-16")
+const metodos = new universityClass("Métodos Matemáticos", "106 - CCT", "Segunda / Quarta / 14-16", ["24/04", "22/05", "26/06"])
+const ipe = new universityClass("Estatística e Probabilidade", "109A - CCT", "Segunda / Quarta / 8-10", ["22/04", "19/06"])
+const ed1 = new universityClass("Estrutura de Dados I", "109B - CCT", "Segunda 10-12 / Terça 16-18", ["15/05", "19/06"])
+const plp = new universityClass("Paradigmas de Linguagens de Programação", "206 - CCT", "Terça 10-12 / Quinta 10-12")
 const arquitetura = new universityClass("Arquitetura de Computadores", "207 - CCT", "Terça / Quinta / 14-16")
 const ingles = new universityClass("Inglês Instrumental", "E1 - 218", "Sexta 14-17")
 const topicos = new universityClass("Tópicos em Programação", "INF2 - P5", "Sexta 8-12")
