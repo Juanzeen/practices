@@ -12,7 +12,7 @@ const ipe = new universityClass("Estatística e Probabilidade", "109A - CCT", "S
 const ed1 = new universityClass("Estrutura de Dados I", "109B - CCT", "Segunda 10-12 / Terça 16-18", ["15/05", "19/06"])
 const plp = new universityClass("Paradigmas de Linguagens de Programação", "206 - CCT", "Terça 10-12 / Quinta 10-12")
 const arquitetura = new universityClass("Arquitetura de Computadores", "207 - CCT", "Terça / Quinta / 14-16")
-const ingles = new universityClass("Inglês Instrumental", "E1 - 218", "Sexta 14-17")
+const ingles = new universityClass("Inglês Instrumental", "E1 - 218", "Sexta 14-17", ["12/04"])
 const topicos = new universityClass("Tópicos em Programação", "INF2 - P5", "Sexta 8-12")
 
 const classes = [metodos, ipe, ed1, plp, arquitetura, ingles, topicos]
